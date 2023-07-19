@@ -14,7 +14,7 @@ export class TestController {
   constructor(private readonly testService: TestService) { }
 
   @Get()
-  get() {
-    return this.testService.get();
+  get(@Body() body: any) {
+    return this.testService.get(body);
   }
 }
