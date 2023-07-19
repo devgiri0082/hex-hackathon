@@ -8,6 +8,7 @@ import {
   UserButton,
 } from "@clerk/clerk-react";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import FetchButton from "./components/Button";
 
 if (!import.meta.env.VITE_SOME_KEY) {
   throw new Error("Missing Publishable Key")
@@ -29,6 +30,7 @@ function ProtectedPage() {
     <>
       <h1>Protected page</h1>
       <UserButton />
+      <FetchButton/>
     </>
   );
 }
