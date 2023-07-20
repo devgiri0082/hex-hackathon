@@ -6,7 +6,7 @@ const FetchButton = () => {
   const [result, setResult] = useState(null);
 
   const fetchData = async () => {
-    const token = await getToken();
+    const token = await getToken({template: "jwt-hex"});
     console.log({token})
     try {
       const response = await fetch('http://localhost:8080/test', 
@@ -26,7 +26,7 @@ const FetchButton = () => {
       setResult(data);
       console.log(data);
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.log('Error fetching data:', error);
     }
   };
 

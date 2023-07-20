@@ -1,10 +1,9 @@
-import React from "react";
 import Navbar from "../components/Navbar";
 import HeroArea from "./../components/HeroArea";
 
 const Homepage = () => {
     return (
-        <main className="flex flex-col justify-center items-center">
+        <main className="flex flex-col items-center justify-center">
             <Navbar />
             <HeroArea />
         </main>

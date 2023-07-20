@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { GoSearch } from "react-icons/go";
 
 function SearchBar() {
@@ -22,6 +22,7 @@ function SearchBar() {
                     <button className="bg-myblue text-white px-4 py-2 rounded-md">Search</button>
                 </div>
             </div>
+
         </div>
     );
 }

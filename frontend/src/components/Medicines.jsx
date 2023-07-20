@@ -15,6 +15,7 @@ function Medicines() {
                     <MedicineCard />
                     <MedicineCard />
                 </div>
+
             </div>
         </main>
     );

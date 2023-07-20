@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import heroImg from "../assets/heroimg.svg";
 
 function HeroArea() {
@@ -15,9 +15,7 @@ function HeroArea() {
                         service can make in your healthcare journey. Whether you're tech-savvy or
                         not, you'll find navigating our platform a breeze.
                     </article>
-                    <button className="text-lg bg-myblue text-white px-4 py-2 rounded-md">
-                        Get Started
-                    </button>
+                    <button className="px-4 py-2 text-lg text-white rounded-md bg-myblue">Get Started</button>
                 </section>
                 <section>
                     <figure className="">
