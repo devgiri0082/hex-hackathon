@@ -1,4 +1,4 @@
-![Medifast logo](frontend/src/assets/logo.svg)    
+![Medifast logo](frontend/src/assets/light-white.png)    
 ## MEDIFAST
 
         Your medicine on the go!
