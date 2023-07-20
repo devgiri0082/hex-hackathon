@@ -1,26 +1,42 @@
+import { useAuth } from "@clerk/clerk-react"; 
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const ProfileAsPatient = () => {
+  const navigate = useNavigate();
+  const { getToken } = useAuth();
+  const [isLoading, setLoading] = useState(false);
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+    e.preventDefault()
+    try {
+      setLoading(true);
+    let token = await getToken({template: "jwt-hex"});
 
-    const formBody = {
-      firstName: formData.get("firstname"),
-      lastName: formData.get("lastname"),
-      phoneNumber: formData.get("phonenumber"),
-      address: formData.get("address"),
-    };
-
-    let response = await fetch("http://localhost:8080/users/create", {
+    let response = await fetch("http://localhost:8080/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+        mode: "cors",
       },
-      body: JSON.stringify(formBody),
+      body: JSON.stringify({
+        firstName: e.target.firstname.value,
+        lastName: e.target.lastname.value,
+        phoneNumber: e.target.phonenumber.value,
+        address: e.target.address.value,
+        type: 'patient'
+      }),
     });
     if (response.ok) {
       console.log("Submitted successfully from frontend!");
+      navigate('/medicines')
     } else {
       console.error("Error submitting form: ", response.statusText);
+      throw new Error('Error');
+    }
+    setLoading(false);
+    } catch(err) {
+      console.log(err);
+      setLoading(false);
     }
   };
 
@@ -52,10 +68,11 @@ const ProfileAsPatient = () => {
           className="px-3 py-3 placeholder-gray-500 border border-gray-700 rounded-lg bg-gray-50"
         />
         <button
+          disabled = {isLoading}
           className="py-3 font-semibold text-white border border-white rounded-lg bg-myblue"
           type="submit"
         >
-          Submit
+          {!isLoading ? 'Submit' : "Submitting..."}
         </button>
       </form>
     </>
