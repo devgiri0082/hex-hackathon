@@ -1,5 +1,5 @@
 import logo from "../assets/logo.svg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -17,7 +17,9 @@ const Navbar = () => {
                         Medicines
                     </li>
                     <li className="bg-myblue text-white py-1 px-3 rounded-md hover:opacity-70 cursor-pointer">
+                    <Link to='/sign-in/*'>
                         Sign In
+                        </Link>
                     </li>
                 </ul>
             </div>
