@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+"jotai@^2.2.2":
+  "integrity" "sha512-Cn8hnBg1sc5ppFwEgVGTfMR5WSM0hbAasd/bdAwIwTaum0j3OUPqBSC4tyk3jtB95vicML+RRWgKFOn6gtfN0A=="
+  "resolved" "https://registry.npmjs.org/jotai/-/jotai-2.2.2.tgz"
+  "version" "2.2.2"
