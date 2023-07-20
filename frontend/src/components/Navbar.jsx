@@ -257,14 +257,27 @@ const Cart = () => {
                   >
                   </span>
                 </div>
-
-                <div className="flex justify-end">
+                <div className="flex justify-between items-center">
+                <div className="w-max">
+                <label className="block mb-2 text-sm font-medium text-gray-900">
+                <span className="text-red-500">*</span> Upload Prescription:
+                </label>
+                <input
+                  className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none"
+                  type="file"
+                  multiple
+                  accept="image/png, image/jpeg, image/jpg"
+                  name="vatimageurl"
+                />
+                </div>
+                <div className="">
                   <a
                     href="#"
-                    className="block rounded bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
+                    className="block rounded bg-myblue px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
                   >
-                    Checkout
+                    Confirm Order
                   </a>
+                </div>
                 </div>
               </div>
             </div>
