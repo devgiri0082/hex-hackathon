@@ -5,11 +5,11 @@ const Navbar = () => {
     const navigate = useNavigate();
     return (
         <nav className="flex w-screen px-4 py-4 shadow-sm justify-center items-center text-slate-500 ">
-            <div className="flex justify-between max-w-[1050px] w-full">
+            <div className="flex justify-between items-center max-w-[1050px] w-full">
                 <figure>
                     <img src={logo} />
                 </figure>
-                <ul className="flex gap-4 sm:gap-6">
+                <ul className="flex gap-4 items-center sm:gap-6">
                     <li className="border-b-2 border-transparent hover:border-myblue px-1 cursor-pointer">
                         Home
                     </li>
