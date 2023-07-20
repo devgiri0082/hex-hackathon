@@ -5,10 +5,10 @@ import Medicines from "../components/Medicines";
 
 function MedicineList() {
     return (
-        <main className="flex flex-col gap-4 h-screen w-full">
+        <main className="flex flex-col gap-4">
             <Navbar />
             <SearchBar />
-	    <Medicines />
+            <Medicines />
         </main>
     );
 }

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
     const navigate = useNavigate();
     return (
-        <nav className="flex w-screen px-4 py-4 shadow-sm justify-center text-slate-500 ">
+        <nav className="flex w-screen px-4 py-4 shadow-sm justify-center items-center text-slate-500 ">
             <div className="flex justify-between max-w-[1050px] w-full">
                 <figure>
                     <img src={logo} />
@@ -19,7 +19,7 @@ const Navbar = () => {
                         Medicines
                     </li>
                     <li className="bg-myblue text-white py-1 px-3 rounded-md hover:opacity-70 cursor-pointer">
-                    Sign In
+                        Sign In
                     </li>
                 </ul>
             </div>
