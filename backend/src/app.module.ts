@@ -6,7 +6,6 @@ import { UsersModule } from './users/users.module';
 import { UploadImagesModule } from './upload-images/upload-images.module';
 import { MedicineModule } from './medicine/medicine.module';
 import { OrdersModule } from './orders/orders.module';
-import { OrdersModule } from './orders/orders.module';
 
 @Module({
   imports: [
