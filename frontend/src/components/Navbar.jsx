@@ -5,7 +5,6 @@ import { UserButton, useAuth } from '@clerk/clerk-react';
 const Navbar = () => {
     const navigate = useNavigate();
     const { isSignedIn, isLoaded } = useAuth();
-    console.log(isSignedIn);
     return (
         <nav className="flex items-center justify-center w-screen px-4 py-4 shadow-sm text-slate-500 ">
             <div className="flex justify-between max-w-[1050px] w-full cursor-pointer items-center">
