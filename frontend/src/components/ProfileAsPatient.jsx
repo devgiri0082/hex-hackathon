@@ -10,7 +10,7 @@ const ProfileAsPatient = () => {
       address: formData.get("address"),
     };
 
-    let response = await fetch("http://localhost:8080/medicine", {
+    let response = await fetch("http://localhost:8080/users/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
