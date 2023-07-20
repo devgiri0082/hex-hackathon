@@ -47,7 +47,8 @@ function ClerkProviderWithRoutes() {
     <ClerkProvider publishableKey={clerkPubKey} navigate={(to) => navigate(to)}>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/medicines" element={<MedicineList />} />
+        <Route path="/medicines" element={<MedicineList />} /> 
+        <Route path="/medicine-info" element={<MedicineInfo />} />
         <Route path="/create-profile" element={<CreateProfile />} />
         <Route
           path="/sign-in/*"
@@ -58,19 +59,6 @@ function ClerkProviderWithRoutes() {
           element={<SignUp routing="path" path="/sign-up" />}
         />
         <Route path="/admin" element={<AdminPage />} />
-        <Route
-          path="/protected"
-          element={
-            <>
-              <SignedIn>
-                <ProtectedPage />
-              </SignedIn>
-              <SignedOut>
-                <RedirectToSignIn />
-              </SignedOut>
-            </>
-          }
-        />
       </Routes>
     </ClerkProvider>
   );

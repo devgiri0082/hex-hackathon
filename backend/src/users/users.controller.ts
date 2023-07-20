@@ -14,7 +14,7 @@ import { AnyFilesInterceptor } from '@nestjs/platform-express';
 @Controller('users')
 @UseInterceptors(AnyFilesInterceptor())
 export class UsersController {
-  constructor(private readonly usersService: UsersService) {}
+  constructor(private readonly usersService: UsersService) { }
 
   @Post()
   create(

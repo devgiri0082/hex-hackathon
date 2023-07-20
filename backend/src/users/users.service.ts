@@ -29,6 +29,7 @@ export class UsersService {
           return createUser.save();
         }
       } else {
+        console.log(userData);
         const createUser = new this.userModel(userData);
         return createUser.save();
       }
