@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+
+    grid-gap: 1rem;
+    /* padding: 1.5rem 2rem 2rem 2rem; */
+    /* place-items: center center; */
+}
