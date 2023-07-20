@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import heroImg from "../assets/heroimg.svg";
-
+import { useAuth } from "@clerk/clerk-react";
 function HeroArea() {
+  const {isSignedIn} = useAuth();
     return (
         <main className="bg-primary-gradient bg-no-repeat bg-cover flex justify-center items-center min-h-[680px] w-full px-4 sm:px-8 lg:px-0">
             <div className="flex max-w-[1050px] justify-center items-center px-4 sm:px-0 gap-8">
@@ -16,7 +17,7 @@ function HeroArea() {
                         service can make in your healthcare journey. Whether you're tech-savvy or
                         not, you'll find navigating our platform a breeze.
                     </article>
-                    <Link to='/sign-in/*'>
+                    <Link to={isSignedIn ? '/medicines':'/sign-in/*'}>
                     <button className="px-4 py-2 text-lg text-white rounded-md bg-myblue">Get Started</button>
                     </Link>
                 </section>
