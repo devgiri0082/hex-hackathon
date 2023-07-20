@@ -7,7 +7,7 @@ function MedicineCard({medicineId, medicineName, price, prevPrice, imageURL}) {
     return (
         <section 
         onClick={()=>{
-           navigate(`/medicine-info/${medicineId}`) 
+           navigate(`/medicine-info/?id=${medicineId}`) 
         }}
         className="w-full max-w-[200px] text-sm flex flex-col justify-between rounded-[10px] cursor-pointer shadow-md overflow-hidden transition-all duration-800 group">
             <img src={imageURL} className="rounded-t-md group-hover:scale-110" />
