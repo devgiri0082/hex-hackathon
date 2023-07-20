@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroArea from "./../components/HeroArea";
 import { useAuth } from '@clerk/clerk-react';
 import { useNavigate } from "react-router-dom";
+import LoadingPage from "./LoadingPage";
 const Homepage = () => {
   const { getToken } = useAuth();
   const navigate = useNavigate();
@@ -50,7 +51,7 @@ const Homepage = () => {
       }  {
         loading &&
         <div className="grid place-content-center h-screen w-screen">
-          <div className="text-5xl">Loading...</div>
+          <div className="text-5xl"><LoadingPage /></div>
         </div>
       }
       </>
