@@ -14,6 +14,7 @@ import MedicineList from "./pages/MedicineList";
 import MedicineInfo from "./pages/MedicineInfo";
 import AdminPage from './pages/AdminPage'
 import SignUpPage from "./pages/SignupPage";
+import CreateProfile from "./pages/Profile";
 
 
 if (!import.meta.env.VITE_SOME_KEY) {
@@ -49,6 +50,7 @@ function ClerkProviderWithRoutes() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/medicines" element={<MedicineList />} />
+        <Route path="/create-profile" element={<CreateProfile/>} />
         <Route
           path="/sign-in/*"
           element={<SignIn routing="path" path="/sign-in" />}

@@ -13,4 +13,9 @@ export class UsersController {
   create(@UploadedFiles() files: Array<Express.Multer.File>, @Body() createUserDto: CreateUserDto, @Headers() header: any) {
     return this.usersService.create(files, createUserDto, header.authorization.split(" ")[1]);
   }
+
+  @Get()
+  get(@Body() getUserDto: { email: string }) {
+    return this.usersService.getUser(getUserDto.email);
+  }
 }
