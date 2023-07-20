@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Link } from "react-router-dom";
 import heroImg from "../assets/heroimg.svg";
 
 function HeroArea() {
@@ -15,7 +16,9 @@ function HeroArea() {
                         service can make in your healthcare journey. Whether you're tech-savvy or
                         not, you'll find navigating our platform a breeze.
                     </article>
+                    <Link to='/sign-in/*'>
                     <button className="px-4 py-2 text-lg text-white rounded-md bg-myblue">Get Started</button>
+                    </Link>
                 </section>
                 <section>
                     <figure className="">

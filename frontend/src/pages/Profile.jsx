@@ -2,12 +2,14 @@
 import { useState } from "react";
 import ProfileAsPatient from "../components/ProfileAsPatient";
 import ProfileAsPharmacy from "../components/ProfileAsPharmacy";
+import Navbar from "../components/Navbar";
 
 function CreateProfile() {
   const [clicked, setClicked] = useState("patient");
 
   return (
     <>
+    <Navbar/>
       <main className="flex items-center justify-center h-auto min-h-screen bg-no-repeat bg-cover bg-primary-gradient ">
         <div className="flex items-center justify-center my-4">
           <div className="flex flex-col px-8 py-10 border border-gray-900 rounded-lg min-w-[300px] bg-cyan-50">

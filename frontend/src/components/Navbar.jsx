@@ -9,11 +9,13 @@ const Navbar = () => {
     return (
         <nav className="flex items-center justify-center w-screen px-4 py-4 shadow-sm text-slate-500 ">
             <div className="flex justify-between max-w-[1050px] w-full cursor-pointer items-center">
+              <Link to={'/'}>
                 <figure>
                     <img src={logo} />
                 </figure>
-                <ul className="flex items-center gap-4 sm:gap-6">
-                    <li className="px-1 border-b-2 border-transparent cursor-pointer hover:border-myblue">
+              </Link>
+                <ul className="flex gap-4 items-center sm:gap-6">
+                    <li className="border-b-2 border-transparent hover:border-myblue px-1 cursor-pointer">
                         Home
                     </li>
                     <li className="px-1 border-b-2 border-transparent cursor-pointer hover:border-myblue">

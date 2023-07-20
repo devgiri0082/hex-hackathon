@@ -8,6 +8,8 @@ const Homepage = () => {
   const navigate = useNavigate();
   let [loading, setLoading] = useState(false);
     let user = async() => {
+      try {
+
       setLoading(true);
       const token = await getToken({template: "jwt-hex"});
       const response = await fetch('http://localhost:8080/users', 
@@ -20,13 +22,18 @@ const Homepage = () => {
         },
       }
       );
+    
+      if (!response.ok) {
+        setLoading(false);
+        throw new Error('Network response was not ok');
+      }
       const body = await response.json();
       // console.log({body: res});
       if(!body.exist) navigate('/create-profile')
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
       setLoading(false);
+      } catch(err) {
+        console.log(err);
+      }
       
     }
     useEffect(() => {
@@ -42,8 +49,8 @@ const Homepage = () => {
         </main>
       }  {
         loading &&
-        <div className="grid place-center h-screen w-screen">
-          <div>Loading</div>
+        <div className="grid place-content-center h-screen w-screen">
+          <div className="text-5xl">Loading...</div>
         </div>
       }
       </>
