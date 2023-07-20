@@ -1,11 +1,6 @@
-import  { useState } from "react";
 import { GoSearch } from "react-icons/go";
 
-function SearchBar() {
-    const [searchText, setSearchText] = useState("");
-    const handleSearch = (e) => {
-        setSearchText(e.target.value);
-    };
+function SearchBar({searchQuery, handleSearchQuery}) {
     return (
         <div className="flex gap-4 w-screen text-slate-500 justify-center items-center">
             <div className="min-w-[1050px]">
@@ -14,8 +9,8 @@ function SearchBar() {
                         <GoSearch className="relative left-8" />
                         <input
                             placeholder="Search..."
-                            value={searchText}
-                            onChange={handleSearch}
+                            value={searchQuery}
+                            onChange={handleSearchQuery}
                             className="ps-8 h-10 w-[8rem] sm:w-auto text-sm rounded-md outline-transparent border-none focus:outline-myblue bg-blue-50 focus:outline-[1px]"
                         />
                     </div>
