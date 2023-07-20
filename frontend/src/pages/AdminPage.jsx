@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-/* eslint-disable react/no-unescaped-entities */
-=======
 import { useState } from "react";
 
->>>>>>> 33a17e7 (add: DetailsForm)
 export default function AdminPage() {
   const handleSubmit = () => {
 
-<<<<<<< HEAD
-=======
     const formBody = {
       name: formData.get("name"),
       price: formData.get("price"),
@@ -31,25 +25,17 @@ export default function AdminPage() {
     } else {
       console.error("Error submitting form: ", response.statusText);
     }
->>>>>>> 33a17e7 (add: DetailsForm)
   };
   return (
     <>
       <main className="bg-primary-gradient bg-no-repeat bg-cover flex justify-center items-center min-h-[688px] ">
         <div className="flex items-center justify-center h-screen ">
-<<<<<<< HEAD
-          <div className="flex flex-col px-8 py-10 border border-gray-900 rounded-lg min-w-[450px] bg-cyan-50">
-            <div className="mt-10 text-black">
-              <h1 className="text-4xl font-bold">Admin Panel</h1>
-              <p className="font-semibold">Medicine Information Upload!</p>
-=======
           <div className="flex flex-col px-8 py-10 border border-gray-900 rounded-lg min-w-[500px] bg-cyan-50 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
             <div className="mt-10 underline text-slate-700">
               <h1 className="pb-10 text-5xl font-bold text-center">
                 Admin Panel
               </h1>
               <p className="font-bold ">Medicine Information Upload!</p>
->>>>>>> 33a17e7 (add: DetailsForm)
             </div>
             <form className="flex flex-col mt-10 space-y-8">
               <input
