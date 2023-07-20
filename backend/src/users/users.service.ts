@@ -23,8 +23,8 @@ export class UsersService {
         } else {
           let panImage = files.find((file) => file.fieldname === 'panImage');
           let vatImage = files.find((file) => file.fieldname === "vatImage")
-          let panImageAWS = await this.uploadImageService.uploadProfileToAWS(panImage.buffer, `${panImage.filename}`)
-          let vatImageAWS = await this.uploadImageService.uploadProfileToAWS(vatImage.buffer, vatImage.filename)
+          let panImageAWS = await this.uploadImageService.uploadImageToAWS(panImage.buffer, `${panImage.originalname}`)
+          let vatImageAWS = await this.uploadImageService.uploadImageToAWS(vatImage.buffer, vatImage.originalname)
           const createUser = new this.userModel({ ...userData, panImageUrl: panImageAWS.Location, vatImageUrl: vatImageAWS.Location, email: this.getEmail(jwtString) });
           return createUser.save();
         }
