@@ -30,24 +30,7 @@ function BuyMedicine() {
                     <img src={sinex} className="w-60" />
                 </div>
                 <div className="p-6 flex flex-col items-start justify-between">
-                    <div className="text-upper flex flex-col gap-1 border-b-myblue border-b-2 pb-2 mb-2">
-                        <div className="text-xl font-medium">Paracetamol</div>
-                        <div className="text-myblue">Antibiotics</div>
-                        <div>Brand: Afrin No Drip Sinus, Allerest 12 Hour Nasal Spray</div>
-                    </div>
                     <div className="text-lower flex flex-col gap-3 items-start ">
-                        <div className="flex gap-4">
-                            <span className="text-myblue">Rs. 30</span>
-                            <span className="text-slate-500 line-through">Rs. 45</span>
-                        </div>
-
-                        <div className="flex items-center gap-4">
-                            <span>Quantity</span>
-                            <CartButton
-                                quantity={product.quantity}
-                                handleCartChange={handleCartChange}
-                            />
-                        </div>
                         <div className="p-6 flex flex-col items-start justify-between">
                             <div className="text-upper flex flex-col gap-1 border-b-myblue border-b-2 pb-2 mb-2">
                                 <div className="text-xl font-medium">Paracetamol</div>
