@@ -37,6 +37,9 @@ export class User {
 
   @Prop()
   address: string
+
+  @Prop({ default: false })
+  profileCompleted: boolean
 }
 
 export const userSchema = SchemaFactory.createForClass(User);

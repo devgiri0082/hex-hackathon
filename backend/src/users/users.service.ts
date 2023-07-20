@@ -44,8 +44,28 @@ export class UsersService {
       );
     }
   }
+  async getUser(email: string) {
+    try {
+      const user = await this.userModel.findOne({ email: email });
+      if (!user) {
+        return { email: email, exist: false }
+      }
+      return { exist: true, email: email, user: user }
+    } catch (err) {
+      console.log(err);
+      throw new HttpException(
+        {
+          status: HttpStatus.INTERNAL_SERVER_ERROR,
+          error: err.response.error,
+        },
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
+    }
+
+  }
 
   private getEmail(jwt) {
     return JSON.parse(atob(jwt.split('.')[1])).email
   }
+
 }
