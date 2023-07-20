@@ -16,9 +16,12 @@ export default function AdminPage() {
       requiresPrescription: checked,
     };
 
-    let response = await fetch("http:localhost:8080/medicine", {
+    let response = await fetch("http://localhost:8080/medicine", {
       method: "POST",
-      body: formBody,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formBody),
     });
     if (response.ok) {
       console.log("Submitted successfully from frontend!");

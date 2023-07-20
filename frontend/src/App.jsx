@@ -12,10 +12,8 @@ import FetchButton from "./components/Button";
 import Homepage from "./pages/Homepage";
 import MedicineList from "./pages/MedicineList";
 import MedicineInfo from "./pages/MedicineInfo";
-import AdminPage from './pages/AdminPage'
-import SignUpPage from "./pages/SignupPage";
+import AdminPage from "./pages/AdminPage";
 import CreateProfile from "./pages/Profile";
-
 
 if (!import.meta.env.VITE_SOME_KEY) {
   throw new Error("Missing Publishable Key");
@@ -50,7 +48,7 @@ function ClerkProviderWithRoutes() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/medicines" element={<MedicineList />} />
-        <Route path="/create-profile" element={<CreateProfile/>} />
+        <Route path="/create-profile" element={<CreateProfile />} />
         <Route
           path="/sign-in/*"
           element={<SignIn routing="path" path="/sign-in" />}
@@ -60,7 +58,6 @@ function ClerkProviderWithRoutes() {
           element={<SignUp routing="path" path="/sign-up" />}
         />
         <Route path="/admin" element={<AdminPage />} />
-        <Route path="/signup" element={<SignUpPage />} />
         <Route
           path="/protected"
           element={
