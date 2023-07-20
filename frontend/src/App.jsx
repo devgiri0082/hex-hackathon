@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import FetchButton from "./components/Button";
 import Homepage from "./pages/Homepage";
 import MedicineList from "./pages/MedicineList";
+import AdminPage from './pages/AdminPage'
 
 if (!import.meta.env.VITE_SOME_KEY) {
     throw new Error("Missing Publishable Key");
@@ -47,6 +48,7 @@ function ClerkProviderWithRoutes() {
                 <Route path="/medicines" element={<MedicineList />} />
                 <Route path="/sign-in/*" element={<SignIn routing="path" path="/sign-in" />} />
                 <Route path="/sign-up/*" element={<SignUp routing="path" path="/sign-up" />} />
+                <Route path="/admin" element={<AdminPage />} />
                 <Route
                     path="/protected"
                     element={

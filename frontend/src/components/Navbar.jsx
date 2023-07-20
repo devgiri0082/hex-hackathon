@@ -6,12 +6,12 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
     const navigate = useNavigate();
     return (
-        <nav className="flex w-screen px-4 py-4 shadow-sm justify-center ">
+        <nav className="flex justify-center w-screen px-4 py-4 shadow-sm ">
             <div className="flex justify-between max-w-[1050px] w-full">
                 <figure>
                     <img src={logo} />
                 </figure>
-                <ul className="flex gap-4 sm:gap-6">
+                <ul className="flex gap-4 cursor-pointer sm:gap-6">
                     <li>Home</li>
                     <li>Contact</li>
                     <li>About Us</li>
