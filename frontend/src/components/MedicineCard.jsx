@@ -1,10 +1,16 @@
 import React from "react";
 import paracetamol from "../assets/paracetamol.png";
+import { useNavigate } from "react-router-dom";
 
-function MedicineCard({medicineName, price, prevPrice}) {
+function MedicineCard({medicineId, medicineName, price, prevPrice, imageURL}) {
+    const navigate = useNavigate();
     return (
-        <section className="w-full max-w-[200px] text-sm flex flex-col justify-between rounded-[10px] hover:shadow-sm cursor-pointer shadow-md">
-            <img src={paracetamol} className="rounded-t-md" />
+        <section 
+        onClick={()=>{
+           navigate(`/medicine-info/${medicineId}`) 
+        }}
+        className="w-full max-w-[200px] text-sm flex flex-col justify-between rounded-[10px] cursor-pointer shadow-md overflow-hidden transition-all duration-800 group">
+            <img src={imageURL} className="rounded-t-md group-hover:scale-110" />
             <div className="p-4 rounded-b-md bg-white text-slate-600 ">
                 <h3 className="font-medium">{medicineName}</h3>
                 <div className="flex justify-between">

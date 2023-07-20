@@ -4,6 +4,7 @@
         "description": "Aspirin is a nonsteroidal anti-inflammatory drug (NSAID) that is commonly used to reduce pain, fever, and inflammation. It works by blocking the production of certain chemicals in the body that cause pain and inflammation. Aspirin is often used to treat conditions like headache, menstrual cramps, toothache, and arthritis. It is also used as a blood thinner to prevent heart attacks and strokes in people who are at risk.",
         "id": "aecbacebe234",
         "price": "Rs. 30",
+        "imageURL": "https://i.imgur.com/rLVpdzD.png",
         "prevPrice": "Rs. 45",
         "dosage": "325-650 mg every 4-6 hours as needed",
         "side_effects": ["Nausea", "Vomiting", "Stomach pain", "Bleeding", "Allergic reactions"]
@@ -13,6 +14,7 @@
         "description": "Paracetamol, also known as acetaminophen, is a widely used medication to relieve pain and reduce fever. It works by increasing the pain threshold and lowering the body's temperature set-point. Paracetamol is commonly used to treat conditions such as headaches, toothaches, menstrual cramps, and mild arthritis. It is a safe and effective over-the-counter medication.",
         "id": "bcddeaf67d1",
         "price": "Rs. 25",
+        "imageURL": "https://5.imimg.com/data5/SELLER/Default/2022/8/GL/PR/JY/129887935/panadol-paracetamol-tablets-500x500.jpeg",
         "prevPrice": "Rs. 35",
         "dosage": "500-1000 mg every 4-6 hours as needed",
         "side_effects": [
@@ -25,6 +27,7 @@
     {
         "name": "Ibuprofen",
         "description": "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) that is used to relieve pain, reduce inflammation, and lower fever. It works by inhibiting the production of prostaglandins, which are responsible for pain and inflammation. Ibuprofen is commonly used to treat conditions such as arthritis, back pain, menstrual cramps, and sports injuries.",
+        "imageURL": "https://i.imgur.com/VaTvXKe.png",
         "id": "7aee6cc3312",
         "price": "Rs. 35",
         "prevPrice": "Rs. 50",
@@ -44,6 +47,7 @@
         "price": "Rs. 40",
         "prevPrice": "Rs. 60",
         "dosage": "10 mg once daily",
+        "imageURL": "https://i.imgur.com/K2N2Sw2.png",
         "side_effects": ["Headache", "Dry mouth", "Drowsiness", "Nausea", "Allergic reactions"]
     },
     {
@@ -52,6 +56,7 @@
         "id": "c43abc56f90",
         "price": "Rs. 50",
         "prevPrice": "Rs. 75",
+        "imageURL": "https://i.imgur.com/v78hFFM.png",
         "dosage": "20-40 mg once daily before a meal",
         "side_effects": ["Headache", "Nausea", "Diarrhea", "Abdominal pain", "Allergic reactions"]
     },
@@ -61,6 +66,7 @@
         "id": "abef3e45512",
         "price": "Rs. 45",
         "prevPrice": "Rs. 65",
+        "imageURL": "https://5.imimg.com/data5/SELLER/Default/2022/6/EN/JI/SB/4646464/cetirizine-hydrochloride-tablets-i-p-.jpg",
         "dosage": "10 mg once daily",
         "side_effects": [
             "Drowsiness (in some individuals)",
@@ -75,6 +81,7 @@
         "description": "Simvastatin is a medication used to lower cholesterol levels in the blood. It belongs to a class of drugs called statins, which work by inhibiting an enzyme involved in cholesterol production. Simvastatin is prescribed to reduce the risk of heart disease and stroke in individuals with high cholesterol levels.",
         "id": "acaf45b987c",
         "price": "Rs. 60",
+        "imageURL": "https://i.imgur.com/kDmLHnS.png",
         "prevPrice": "Rs. 90",
         "dosage": "10-40 mg once daily in the evening",
         "side_effects": [
@@ -90,6 +97,7 @@
         "description": "Metformin is an oral antidiabetic drug that is used to manage high blood sugar levels in people with type 2 diabetes. It works by reducing the amount of glucose produced by the liver and increasing the body's sensitivity to insulin. Metformin helps in controlling blood sugar levels and is often prescribed alongside lifestyle changes for diabetes management.",
         "id": "cafe456bc76",
         "price": "Rs. 70",
+        "imageURL": "https://i.imgur.com/9UzSeHK.png",
         "prevPrice": "Rs. 100",
         "dosage": "500-2000 mg per day, divided into two doses",
         "side_effects": [
@@ -103,6 +111,7 @@
     {
         "name": "Amoxicillin",
         "description": "Amoxicillin is a penicillin-type antibiotic used to treat bacterial infections. It works by stopping the growth of bacteria and is commonly prescribed for conditions such as respiratory infections, urinary tract infections, and skin infections. Amoxicillin is a widely used and effective antibiotic that helps in fighting various bacterial illnesses.",
+        "imageURL": "https://i.imgur.com/3c1ok5a.png",
         "id": "e12ca8df76c",
         "price": "Rs. 90",
         "prevPrice": "Rs. 120",
@@ -120,6 +129,7 @@
         "description": "Diclofenac is a nonsteroidal anti-inflammatory drug (NSAID) that is used to relieve pain and reduce inflammation. It works by inhibiting the production of certain chemicals in the body that cause pain and swelling. Diclofenac is commonly prescribed to treat conditions such as arthritis, back pain, sprains, and strains.",
         "id": "2fe765ab89c",
         "price": "Rs. 55",
+        "imageURL": "https://i.imgur.com/0Yp7jgX.png",
         "prevPrice": "Rs. 80",
         "dosage": "50-75 mg twice daily as needed",
         "side_effects": ["Nausea", "Stomach pain", "Indigestion", "Rash", "Allergic reactions"]
@@ -130,6 +140,7 @@
         "id": "7cbef98a765",
         "price": "Rs. 80",
         "prevPrice": "Rs. 110",
+        "imageURL": "https://i.imgur.com/VaTvXKe.png",
         "dosage": "0.25-2 mg per day, divided into multiple doses",
         "side_effects": [
             "Drowsiness",
@@ -140,18 +151,10 @@
         ]
     },
     {
-        "name": "Montelukast",
-        "description": "Montelukast is a leukotriene receptor antagonist that is used to manage and prevent symptoms of asthma and seasonal allergies. It works by blocking the action of leukotrienes, which cause inflammation and bronchoconstriction in the airways. Montelukast provides relief from wheezing, shortness of breath, and allergic rhinitis.",
-        "id": "8cdab12ef6a",
-        "price": "Rs. 65",
-        "prevPrice": "Rs. 95",
-        "dosage": "10 mg once daily in the evening",
-        "side_effects": ["Headache", "Abdominal pain", "Nausea", "Rash", "Allergic reactions"]
-    },
-    {
         "name": "Esomeprazole",
         "description": "Esomeprazole is a proton pump inhibitor (PPI) that is used to reduce the production of stomach acid. It is prescribed to treat conditions such as acid reflux, gastroesophageal reflux disease (GERD), and peptic ulcers. Esomeprazole provides relief from heartburn and helps in healing the esophagus.",
         "id": "f7bc98a9d34",
+        "imageURL": "https://www.sanifyhealthcare.com/wp-content/uploads/2022/05/Omitidon-SR-Capsules.jpg",
         "price": "Rs. 75",
         "prevPrice": "Rs. 105",
         "dosage": "20-40 mg once daily before a meal",
@@ -162,6 +165,7 @@
         "description": "Metoprolol is a beta-blocker that is used to treat high blood pressure, angina (chest pain), and heart rhythm disorders. It works by blocking the effects of adrenaline on the heart, thus reducing heart rate and blood pressure. Metoprolol is prescribed to improve heart function and prevent cardiovascular complications.",
         "id": "7b8f9a4dcba",
         "price": "Rs. 85",
+        "imageURL": "https://wellonapharma.com/admincms/product_img/product_actual_img/Metoprolol%20Tablets_26-01-2017-13:34:18.jpg",
         "prevPrice": "Rs. 115",
         "dosage": "25-200 mg per day, divided into multiple doses",
         "side_effects": [
@@ -173,60 +177,13 @@
         ]
     },
     {
-        "name": "Ciprofloxacin",
-        "description": "Ciprofloxacin is an antibiotic that belongs to the class of fluoroquinolones. It is used to treat bacterial infections such as urinary tract infections, respiratory infections, and skin infections. Ciprofloxacin works by stopping the growth of bacteria and is effective against a wide range of bacteria.",
-        "id": "d4bca879e56",
-        "price": "Rs. 95",
-        "prevPrice": "Rs. 130",
-        "dosage": "250-750 mg twice daily",
-        "side_effects": ["Nausea", "Diarrhea", "Abdominal pain", "Rash", "Allergic reactions"]
-    },
-    {
-        "name": "Ranitidine",
-        "description": "Ranitidine is an H2 blocker that is used to reduce the production of stomach acid. It is prescribed to treat conditions such as acid reflux, peptic ulcers, and gastroesophageal reflux disease (GERD). Ranitidine provides relief from heartburn and helps in the healing of ulcers.",
-        "id": "9abc1e45672",
-        "price": "Rs. 70",
-        "prevPrice": "Rs. 100",
-        "dosage": "150 mg twice daily before a meal",
-        "side_effects": ["Headache", "Nausea", "Diarrhea", "Dizziness", "Allergic reactions"]
-    },
-    {
-        "name": "Fluoxetine",
-        "description": "Fluoxetine is a selective serotonin reuptake inhibitor (SSRI) that is used to treat depression, obsessive-compulsive disorder (OCD), and panic disorder. It works by increasing the levels of serotonin, a neurotransmitter that regulates mood and emotions, in the brain. Fluoxetine helps in improving mood and reducing anxiety.",
-        "id": "67ab89cdeff",
-        "price": "Rs. 100",
-        "prevPrice": "Rs. 140",
-        "dosage": "20-80 mg per day, usually taken in the morning",
-        "side_effects": [
-            "Nausea",
-            "Insomnia",
-            "Headache",
-            "Sexual dysfunction",
-            "Allergic reactions"
-        ]
-    },
-    {
-        "name": "Furosemide",
-        "description": "Furosemide is a diuretic medication used to treat fluid retention (edema) caused by various medical conditions such as congestive heart failure, kidney disorders, and liver disease. It works by increasing the amount of urine produced, thus reducing excess fluid in the body.",
-        "id": "abc34556deff",
-        "price": "Rs. 45",
-        "prevPrice": "Rs. 70",
-        "dosage": "20-80 mg once or twice daily",
-        "side_effects": [
-            "Frequent urination",
-            "Low blood pressure",
-            "Dizziness",
-            "Muscle cramps",
-            "Allergic reactions"
-        ]
-    },
-    {
         "name": "Levothyroxine",
         "description": "Levothyroxine is a synthetic thyroid hormone used to treat hypothyroidism (underactive thyroid). It works by supplementing the body with the thyroid hormone it lacks. Levothyroxine helps in regulating metabolism and energy levels and is crucial for overall well-being.",
         "id": "f1bebc098ed",
         "price": "Rs. 110",
         "prevPrice": "Rs. 160",
         "dosage": "25-200 mcg once daily, preferably in the morning",
+        "imageURL": "https://i.imgur.com/KHDCyZH.png",
         "side_effects": [
             "Nervousness",
             "Weight loss (in excessive doses)",
