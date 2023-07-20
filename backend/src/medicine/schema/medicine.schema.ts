@@ -8,11 +8,14 @@ export class Medicine {
   @Prop({ required: true })
   name: string
 
+  @Prop({required: true})
+  price: string
+
   @Prop()
   description: string
 
   @Prop()
-  does: string
+  dosage: string
 
   @Prop()
   possibleSideEffect: string
@@ -21,7 +24,7 @@ export class Medicine {
   images: string[]
 
   @Prop()
-  requirePrescription: boolean
+  requiresPrescription: boolean
 }
 
 export const medicineSchema = SchemaFactory.createForClass(Medicine);
