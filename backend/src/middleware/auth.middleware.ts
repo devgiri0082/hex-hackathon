@@ -29,11 +29,8 @@ export class AuthMiddleware implements NestMiddleware {
           status,
         });
       } else {
-        const clerk = Clerk({ secretKey: 'sk_test_UOXLDBZDUnWpklb5pgBRiKM32KGOObBmVxrwcT1vvQ' })
-        let userId = res.req.user.sub;
-        let user = await clerk.users.getUser(userId);
-        console.log(user.emailAddresses[0].emailAddress);
-        req.body = { email: user.emailAddresses[0].emailAddress }
+        const email = res.req.user.email;
+        req.body = { email: email, ...req.body }
       }
 
       next();
